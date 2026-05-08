@@ -14,7 +14,7 @@ export function DataTable<T extends { id: string | number }>({
   data,
   columns,
 }: DataTableProps<T>) {
-  // ✔ REQUISITO: Partial<T> para edición parcial
+  // ✔ REQUIREMENT: Partial<T> used for partial editing state
   const [editingRow, setEditingRow] = useState<Partial<T> | null>(null);
 
   const handleEdit = (row: T) => {
@@ -63,7 +63,7 @@ export function DataTable<T extends { id: string | number }>({
         </tbody>
       </table>
 
-      {/* ✔ edición parcial obligatoria */}
+      {/* ✔ REQUIREMENT: Partial editing state */}
       {editingRow && (
         <div style={{ marginTop: 20 }}>
           <h3>Editando fila</h3>
