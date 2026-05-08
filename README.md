@@ -43,6 +43,7 @@
 
 ## 📁 Project Structure
 
+```
 src/
 ├── components/ # Reusable UI components (e.g. DataTable)
 ├── utils/ # Utility functions (e.g. dateDiff)
@@ -52,6 +53,7 @@ src/
 ├── App.tsx # Root component
 ├── main.tsx # Entry point
 └── index.css # Global styles
+```
 
 ---
 
